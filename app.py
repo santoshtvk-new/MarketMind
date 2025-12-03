@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 import pandas as pd
 from textblob import TextBlob
 from datetime import datetime, timedelta
-all_tickers = json.loads(open('src/ticker.json').read())
+all_tickers = json.loads(open('ticker.json').read())
 tickers_list = [k['s'] for k in all_tickers['data']]
 
 st.set_page_config(
